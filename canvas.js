@@ -24,7 +24,7 @@ var ture = new Image();     ture.src = 'ture.png';
 var Jetpack2 = new Image();     Jetpack2.src = 'Jetpack2.png';
 var Jetpack3 = new Image();     Jetpack3.src = 'Jetpack3.png';
 var skyline = new Image();     skyline.src = 'skyline.png';
-var windmill = new Image();     windmill.src = 'windmill.png';
+var windmill = new Image();     windmill.src = 'Windmill.png';
 var c = 0;
 let options = "";
 var geschoss = 1;

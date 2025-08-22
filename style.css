@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "PixelFont";
+  src: url(fonts/ari-w9500.ttf);
+}
+body {
+    font-family: PixelFont;
+    background-color: #333;
+    color: white;
+}
+header {
+    background-color: #335;
+    text-align: center;
+    /* width: fit-content; */
+    margin: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: 2px solid #111;
+
+}
+h1{
+    text-align: center;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 2%;
+    padding: auto;
+    gap: 20px;
+}
+
+.foto {
+    width: 120px;
+    height: 150px;
+    align-content: center;
+    background-image: url('foto.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10%;
+    border: 2px solid #555;
+
+}
+
+.infoBox {
+    background-color: #335;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #555;
+    width: fit-content;
+}
+.chapter{
+    background-color: #335;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 1%;
+    border-radius: 10px;
+    border: 2px solid #111;
+}
+.freitext {
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    width: fit-content;
+    margin: auto;
+}
+

@@ -14,3 +14,5 @@ const observer = new IntersectionObserver(entries => {
 // threshold = wieviel % sichtbar sein müssen (hier 10%)
 
 elements.forEach(el => observer.observe(el));
+
+

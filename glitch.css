@@ -1,6 +1,7 @@
 /* Haupt-Einblendung */
 @keyframes fadeInGlitch {
   0% {
+    opacity: 0.1;
     transform: translateX(10%);
   }
   30% {
@@ -17,8 +18,11 @@
   }
   99% {
     transform: translateX(10%) scale(1.2);
+    opacity: 0.1;
+
   }
   100% {
     transform: translateX(0);
+    opacity: 1;
   }
 }

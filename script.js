@@ -10,7 +10,7 @@ const observer = new IntersectionObserver(entries => {
       entry.target.classList.remove('visible');
     }
   });
-}, { threshold: 0.3}); 
+}, { threshold: 0.1}); 
 // threshold = wieviel % sichtbar sein müssen (hier 10%)
 
 elements.forEach(el => observer.observe(el));

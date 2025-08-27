@@ -88,9 +88,8 @@ a{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     position: relative;
-    gap: 20px;
 }
 
 .language {
@@ -98,13 +97,12 @@ a{
     right: 0;
     display: flex;
     gap: 10px;
+    align-items: center;
 }
 .titel{
     position: relative;
     display: flex;
     /* justify-content: center; */
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 

@@ -16,3 +16,37 @@ const observer = new IntersectionObserver(entries => {
 elements.forEach(el => observer.observe(el));
 
 
+// hacker effect
+const letters = "abcdef123456789#$%&'()*";
+
+document.addEventListener('DOMContentLoaded', () => {
+  const elements = document.querySelectorAll(".hack");
+
+  elements.forEach((el) => {
+    el.setAttribute("data-value", el.textContent);
+
+    el.addEventListener("mouseover", (event) => {
+      let iteration = 0;
+      let interval = setInterval(() => {
+        event.target.innerText = 
+          event.target.innerText
+            .split("")
+            .map((letter, index) => {
+              if (index < iteration) {
+                return event.target.dataset.value[index];
+              }
+              return letters[Math.floor(Math.random() * letters.length)];
+            })
+            .join("");
+
+        if (iteration >= event.target.dataset.value.length) {
+          clearInterval(interval);
+        }
+
+        iteration++; // oder iteration++
+      }, 112);
+    });
+  });
+});
+
+

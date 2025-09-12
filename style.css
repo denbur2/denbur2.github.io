@@ -20,8 +20,9 @@ header {
     background-color: rgb(0, 100, 1);
     color: black;
     text-align: center;
-    width: 80%;
     /* min-height: 90vh; */
+    width: fit-content;
+    min-width: 80%;
     margin: auto;
     margin-top: 2%;
     border-radius: 2px;

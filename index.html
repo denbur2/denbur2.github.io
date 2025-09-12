@@ -9,7 +9,7 @@
 </head>
 <body>
 
-    <header class="glitch fade-in glow">   
+    <!-- <header class="glitch fade-in glow">   
         <section class="space_container">
             <section>
                 <h1 class="hack titel">/Lebenslauf</h1>
@@ -20,12 +20,18 @@
             </section>
             
         </section>
-    </header>
-        
-
+    </header> -->
+    
+    <header class="glitch fade-in glow">
+        <h1 class="hh1">Lebenslauf</h1>
         <section class="container"> 
-            <section class="infoBox fade-in glow">
-                <h2 class="hack">/Persönliche_Daten</h2>
+            <section class="fade-in-right">
+            </section>
+            
+            <section class="infoBox fade-in">
+                
+                <h2 class="hack hh2-blue">/Persönliche_Daten</h2>
+                <section class="foto"></section>  
                 <p>Name: Hendrik Armbrecht</p>
                 <p>Geburtsdatum: 23.02.2002</p>
                 <p>Adresse: Solonplatz 3, 13088 Berlin</p>
@@ -34,39 +40,55 @@
                 <p>Github: <a href="https://github.com/denbur2">denbur2</a></p>
                 
             </section>
-            <section class="fade-in-right">
-                <section class="foto"></section>  
+            
+            <section class="container2">
+                <section class="infoBoxFit fade-in">
+                    <h2 class="hh2-red">/Über_mich</h2>
+                    <p>
+                        Nach meinem Abschluss als Elektrotechnischer Assistent mit Schwerpunkt auf Datentechnik an der Hein-Moeller-Schule habe ich
+                        ein Studium in Computer Engineering begonnen. Nach drei Semestern 
+                        bin ich dann zu
+                        Angewandte Informatik gewechselt. Was ich auch aktuell noch studiere.
+                    </p>
+                </section>
+                <section class="infoBoxFit fade-in-right">
+                    <h2 class="hh2-red">/Kenntnisse</h2>
+                    <h3 class="hh3">Programmiersprachen:</h3>
+                    <p>C, C++, Python, Java, HTML, CSS, JavaScript, SQL</p>
+                    <h3 class="hh3">Software:</h3>
+                    <p>Visual Studio Code, Git</p>
+                    <h3 class="hh3">Hardware:</h3>
+                    <p>Raspberry Pi, Arduino</p>
+                    <h3 class="hh3">Sprachen:</h3>
+                    <p>Deutsch (Muttersprache), Englisch (fließend)</p>
+                </section>
+            </section>
+
+            <section class="infoBox fade-in">
+                <h2 class="hack hh2-blue">/Kurzübersicht</h2>
+                <a href="#studium-angewandte-informatik">2024 - Studium Angewandte_Informatik</a><br>
+                <a href="#studium-computer-engineering">2023 - Studium Computer_Engineering</a><br>
+                <a href="#fachhochschulreife">2021 - Fachhochschulreife</a><br>
+                <a href="#be-bots">2020 - Praktikum Be-Bots</a><br>
+                <a href="#berufsfachschule">2019 - Berufsfachschule</a><br>
+
             </section>
             
-            <section class="infoBox fade-in glow">
-                <h2>/Über_mich</h2>
-                <p>
-                    Nach meinem Abschluss als Elektrotechnischer Assistent mit Schwerpunkt auf Datentechnik an der Hein-Moeller-Schule habe ich
-                    ein Studium in Computer Engineering begonnen. Nach drei Semestern 
-                    bin ich dann zu
-                    Angewandte Informatik gewechselt. Was ich auch aktuell noch studiere.
-                </p>
-            </section>
-            <section class="infoBox fade-in-right glow">
-                <h2>/Kenntnisse</h2>
-                <p>Programmiersprachen: C, C++, Python, Java, HTML, CSS, JavaScript</p>
-                <p>Software: Visual Studio Code, Git</p>
-                <p>Hardware: Raspberry Pi, Arduino</p>
-                <p>Sprachen: Deutsch (Muttersprache), Englisch (fließend)</p>
-            </section>
         </section>
 
+    </header>
 
 
 
-        <section class="container">
+
+        <!-- <section class="container">
             <h1 class="chapter fade-in glow">/Lebenslauf/Zeitstrahl</h1>
-        </section>
+        </section> -->
 
-        <h1 class="freitext fade-in hack">/2024_</h1>
+        <h1 class="freitext fade-in hack" id="studium-angewandte-informatik">/2024_</h1>
         <section class="container">
             <section class="infoBoxFit fade-in glow">
-                <h2>/Studium Angewandte_Informatik</h2>
+                <h2 class="hh2-red">/Studium Angewandte_Informatik</h2>
                 <p>Bachelor of Science</p>
                 <p>Hochschule: HTW Berlin</p>
                 <p>Beginn: 01.04.2024</p>
@@ -74,7 +96,7 @@
                 <a href="dokumente/Pruefungsleistungen_be.pdf">Bestandene Module</a>
             </section>
             <section class="infoBoxFit fade-in-right glow">
-                <h2>/Chaos CommunicationCongress (CCC)</h2>
+                <h2 class="hh2-red">/Chaos CommunicationCongress (CCC)</h2>
                 <p>Besuch von Fachvorträgen und Workshops zu IT-Security</p>
                 <p>27.12.2024 - 30.12.2024</p>
                 <a href="https://events.ccc.de/congress/2024/wiki/Main_Page">Website</a>
@@ -83,10 +105,10 @@
 
 
 
-        <h1 class="freitext fade-in hack">/2023_</h1>
+        <h1 class="freitext fade-in hack" id="studium-computer-engineering">/2023_</h1>
         <section class="container">
             <section class="infoBoxFit fade-in glow">
-                <h2>/Studium Computer_Engineering</h2>
+                <h2 class="hh2-red">/Studium Computer_Engineering</h2>
                 <p>Bachelor of Engineering</p>
                 <p>Hochschule: HTW Berlin</p>
                 <p>01.04.2023 - 30.09.2024 (3 Semester)</p>
@@ -95,10 +117,10 @@
             </section>
         </section>
 
-        <h1 class="freitext fade-in hack">/2021_</h1>
+        <h1 class="freitext fade-in hack" id="fachhochschulreife">/2021_</h1>
         <section class="container">
             <section class="infoBoxFit fade-in-right glow">
-                <h2>/Fachhochschulreife</h2>
+                <h2 class="hh2-red">/Fachhochschulreife</h2>
                 <p>Schwerpunkt: Elektrotechnik</p>
                 <p>Oberstufenzentrum Energietechnik 2: Hein-Moeller-Schule</p>
                 <p>09.08.2021 - 01.07.2022</p>
@@ -106,10 +128,10 @@
             </section>
         </section>
 
-        <h1 class="freitext fade-in hack">/2020_</h1>
+        <h1 class="freitext fade-in hack" id="be-bots">/2020_</h1>
         <section class="container">
             <section class="infoBoxFit fade-in glow">
-                <h2>/Praktikum_Be-Bots</h2>
+                <h2 class="hh2-red">/Praktikum_Be-Bots</h2>
                 <p>Controller-Programmierung für Gewächshausautomatisierung</p>
                 <p>14.09.2020 - 09.10.2020</p>
                 <a href="https://besolutions.gmbh/unser-robotik-unternehmen-be-bots-an-niederlaendischen-investor-verkauft/">Website</a><br>
@@ -120,10 +142,10 @@
             </section>
         </section>
 
-        <h1 class="freitext fade-in hack">/2019_</h1>
+        <h1 class="freitext fade-in hack" id="berufsfachschule">/2019_</h1>
         <section class="container">
             <section class="infoBoxFit fade-in glow">
-                <h2>/Berufsfachschule</h2>
+                <h2 class="hh2-red">/Berufsfachschule</h2>
                 <p>Beruf: Staatlich Geprüfter Elektrotechnischer Assistent</p>
                 <p>Schwerpunkt: Elektrotechnik und Datentechnik</p>
                 <p>Oberstufenzentrum Energietechnik 2: Hein-Moeller-Schule</p>

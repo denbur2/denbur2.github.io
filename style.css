@@ -53,7 +53,7 @@ h3{
 .hh1{
     font-size: 2.3em;
     background-color: rgb(0, 255, 1);
-    color: black;
+    color:  rgb(0, 100, 1);
     margin-top: 0;
     border-radius: 4px;
     border-top: 7px solid rgb(0, 255, 1 );
@@ -98,13 +98,13 @@ a{
     transform: translateX(-70%);
     transition: opacity 1.5s ease, transform 1s ease; */    
     /* animation: fadeInGlitch 0.5s linear forwards; */
-    transform: translateX(70%);
+    /* transform: translateX(70%); */
 }
 
 .fade-in.visible {
     /* opacity: 1;
     transform: translateX(0); */
-    animation: fadeInGlitch 0.5s linear forwards;
+    /* animation: fadeInGlitch 0.5s linear forwards; */
 
 }
 
@@ -112,13 +112,13 @@ a{
     /* opacity: 0;
     transform: translateX(70%);
     transition: opacity 1.5s ease, transform 1s ease; */
-    transform: translateX(70%);
+    /* transform: translateX(70%); */
 
 }
 .fade-in-right.visible {
     /* opacity: 1;
     transform: translateX(0); */
-    animation: fadeInGlitch 0.8s linear forwards;
+    /* animation: fadeInGlitch 0.8s linear forwards; */
 
 }
 
@@ -131,16 +131,26 @@ a{
     margin: 2%;
     padding: auto;
     gap: 20px;
+    height: 80vh;
 }
 .container2 {
-    width: 23em;
+    width: fit-content;
+    align-items: left;
+    text-align: left;
+
+
+    /* scrollfähig machen */
+    max-height: 80vh; /* maximale Höhe festlegen */
+    overflow-y: auto;    /* vertikales Scrollen */
+    overflow-x: hidden;  /* optional: horizontales Scrollen verhindern */
 }
 
 .space_container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: left;
+    text-align: left;
     position: relative;
 }
 
@@ -188,7 +198,7 @@ a{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .fotoPraktikum:hover {
-    transform: scale(1.5);
+    /* transform: scale(1.5); */
     box-shadow: 0 0 15px rgb(0, 255, 1);
 }
 
@@ -201,6 +211,7 @@ a{
     border-radius: 2px;
     border: 2px solid rgb(0, 0, 255);
     width: 23em;
+    margin-bottom: 2%;
 }
 
 .infoBoxFit {
@@ -243,7 +254,7 @@ a{
 }
 .freitext {
     color: rgb(0, 255, 1);
-    text-align: center;
+    text-align: left;
     padding: 10px;
     border-radius: 2px;
     width: fit-content;

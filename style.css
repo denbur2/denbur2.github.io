@@ -2,35 +2,39 @@
   font-family: "PixelFont";
   src: url(fonts/ari-w9500.ttf);
 }
+
 html, body{
     overflow-x: hidden;
+    height: 100%;
 }
 body {
     font-family: PixelFont;
-    background-color: black;
+    background-color: rgb(49, 49, 49);
     /* background-image: url('Cyberpunk2.png'); */
     background-attachment: fixed;
     background-size: cover;
-    color: white;
+    color: #e8e6e3;
     justify-content: center;
     /* display: flex;
     justify-content: center; */
+    height: 99vh;
+
 }
 header {
-    background-color: grey;
+    background-color: rgb(100, 99, 99);
     color: black;
     text-align: center;
     /* min-height: 90vh; */
     width: fit-content;
     min-width: 80%;
     margin: auto;
-    margin-top: 2%;
-    border-radius: 2px;
-    border: 1px solid grey;
+    margin-top: 1%;
+    border-radius: 10px;
+    border: 5px solid rgb(130, 121, 107);
 
 }
 .nowrap{
-    white-space: nowrap;
+    #e8e6e3-space: nowrap;
     width: 100%;
     box-sizing: border-box;
 }
@@ -50,35 +54,38 @@ h3{
     margin-top: 3%;
     margin-bottom: 3%;
 }
-.hh1{
-    font-size: 2.3em;
-    background-color: darkgrey;
-    color:  white;
-    margin-top: 0;
-    border-radius: 4px;
-    border-top: 7px solid darkgrey;
+.hh1 {
+  font-size: 2.3em;
+  background-color: #3a4a63;
+  color: #e8e6e3;
+  margin-top: 0;
+  border-radius: 4px;
+  border: 7px solid #3a4a63;
 }
-.hh2-blue{
-    font-size: 1.8em;
-    background-color: rgb(0, 0, 255);
-    color:  white;
-    margin-top: 0;
-    border-top: 7px solid rgb(0, 0, 255);
+
+.hh2-blue {
+  font-size: 1.8em;
+  background-color: #3a4a63;
+  color: #e8e6e3;
+  margin-top: 0;
+  border-top: 7px solid #3a4a63;
 }
 .hh2-red{
+    padding-left: 5px;
+    padding-right: 5px;
     font-size: 1.8em;
-    background-color: rgb(255, 0, 0);
-    color: black;
+    background-color: rgb(130, 121, 107);
+    color: #e8e6e3;
     margin-top: 0;
-    border-top: 7px solid rgb(255, 0, 0);
+    border-top: 7px solid rgb(130, 121, 107);
 }
 .hh3{
     font-size: 1.5em;
     /* background-color: rgb(255, 0, 255); */
     /* color: black; */
     margin-top: 0;
-    border: 2px solid rgb(255, 255, 255); 
-    border-top: 7px solid rgb(255, 255, 255);
+    border: 2px solid #303436; 
+    border-top: 7px solid #303436;
 }
 p{
     font-family: Arial, Helvetica, sans-serif;
@@ -134,9 +141,13 @@ a{
     height: 80vh;
 }
 .container2 {
+    background: linear-gradient(360deg, rgb(122, 122, 122), #3a4a63);
+    border: 5px solid rgb(130, 121, 107);
+    border-radius: 10px;
     width: fit-content;
     align-items: left;
     text-align: left;
+    padding: 15px;
 
 
     /* scrollfähig machen */
@@ -149,6 +160,15 @@ a{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: left;
+    text-align: left;
+    position: relative;
+}
+.img_container {
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-wrap: wrap;
     align-items: left;
     text-align: left;
     position: relative;
@@ -173,7 +193,7 @@ a{
     width: 120px;
     height: 150px;
     align-content: center;
-    background-image: url('foto.jpg');
+    background-image: url('Hendrik.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -187,8 +207,19 @@ a{
     box-shadow: 0 0 15px rgb(0, 255, 1);
 }
 .fotoPraktikum {
-    width: 320px;
-    height: 240px;
+    width: 160px;
+    height: 120px;
+    background-image: url('Stadtfarm.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 2px;
+    border-top: 7px solid rgb(255, 255, 255);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.fotoPraktikum2{
+    width: 160px;
+    height: 120px;
     background-image: url('fotopraktikum.jpg');
     background-size: cover;
     background-position: center;
@@ -197,45 +228,63 @@ a{
     border-top: 7px solid rgb(255, 255, 255);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+.fotoPraktikum3{
+    width: 160px;
+    height: 120px;
+    background-image: url('Stadtfarm2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 2px;
+    border-top: 7px solid rgb(255, 255, 255);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 .fotoPraktikum:hover {
-    /* transform: scale(1.5); */
+    transform: scale(1.5);
+    box-shadow: 0 0 15px rgb(0, 255, 1);
+}
+.fotoPraktikum2:hover {
+    transform: scale(1.5);
+    box-shadow: 0 0 15px rgb(0, 255, 1);
+}
+.fotoPraktikum3:hover {
+    transform: scale(1.5);
     box-shadow: 0 0 15px rgb(0, 255, 1);
 }
 
 .infoBox {
-    color: white;
-    background-color: #000;
-    text-align: left;
-    /* padding: 20px; */
-    padding-bottom: 10px;
-    border-radius: 2px;
-    border: 2px solid rgb(0, 0, 255);
-    width: 23em;
-    margin-bottom: 2%;
+  color: #e8e6e3;
+  background-color: #000;
+  text-align: left;
+  padding-bottom: 10px;
+  border-radius: 7px;
+  border: 2px solid #3a4a63;
+  width: 23em;
+  margin-bottom: 2%;
 }
 
 .infoBoxFit {
-    color: white;
+    color: #e8e6e3;
     background-color: #000;
     text-align: left;
     /* padding: 20px; */
     padding-bottom: 10px;
     margin-bottom: 2%;
-    border-radius: 2px;
-    border: 2px solid rgb(255, 0, 0);
+    border-radius: 7px;
+    border: 2px solid rgb(130, 121, 107);
     width: fit-content;
     box-sizing: border-box;
 
     /* width: 23em; */
 }
 .infoBoxFit2 {
-    color: white;
+    color: #e8e6e3;
     background-color: #000;
     text-align: left;
     /* padding: 20px; */
     padding-bottom: 10px;
     margin-bottom: 2%;
-    border-radius: 2px;
+    border-radius: 7px;
     border: 2px solid rgb(255, 0, 0);
     width: 100%;
 

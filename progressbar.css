@@ -1,0 +1,48 @@
+@keyframes load25 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 25%;
+    }
+}
+@keyframes load75 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 75%;
+    }
+}
+@keyframes load100 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.loader{
+    width: 80%;
+    height: 10px;
+    background: #444;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.loader-inner{
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, green, green);
+}
+.loader-inner.l25.visible{
+    background: linear-gradient(90deg, red, darkred);
+    animation: load25 0.5s linear forwards;
+}
+.loader-inner.l75.visible{
+    animation: load75 1.5s linear forwards;
+}
+.loader-inner.l100.visible{
+    animation: load100 2s linear forwards;
+    background: linear-gradient(90deg, green, green);
+}

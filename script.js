@@ -1,4 +1,4 @@
-const elements = document.querySelectorAll('.fade-in, .fade-in-right');
+const elements = document.querySelectorAll('.loader-inner');
 
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {

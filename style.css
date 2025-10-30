@@ -141,7 +141,7 @@ a{
     height: 80vh;
 }
 .container2 {
-    background: linear-gradient(360deg, rgb(122, 122, 122), #3a4a63);
+    background: linear-gradient(360deg, rgb(0, 0, 0), #3a4a63);
     border: 5px solid rgb(130, 121, 107);
     border-radius: 10px;
     width: fit-content;

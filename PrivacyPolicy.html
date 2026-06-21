@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datenschutzerklärung – WellbeingApp</title>
+  <style>
+    :root {
+      --bg: #f7f8fa;
+      --card: #ffffff;
+      --text: #1f2933;
+      --muted: #52606d;
+      --accent: #3b6ea5;
+      --border: #e2e6ea;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--bg);
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+    }
+    header {
+      background: var(--accent);
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 { margin: 0 0 8px; font-size: 1.8rem; }
+    header p { margin: 0; opacity: 0.9; font-size: 0.95rem; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-top: 24px;
+    }
+    h2 {
+      font-size: 1.25rem;
+      margin-top: 0;
+      color: var(--accent);
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 8px;
+    }
+    h3 { font-size: 1.05rem; margin-bottom: 4px; }
+    p, li { color: var(--muted); }
+    ul { padding-left: 20px; }
+    .badge {
+      display: inline-block;
+      background: #e6f4ea;
+      color: #1e7e34;
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+      font-size: 0.92rem;
+    }
+    th, td {
+      text-align: left;
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border);
+    }
+    th { color: var(--text); }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Datenschutzerklärung</h1>
+    <p>WellbeingApp · Stand: 21. Juni 2026</p>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <span class="badge">100&nbsp;% lokal – keine Cloud, kein Server</span>
+      <p>
+        Die <strong>WellbeingApp</strong> wurde im Rahmen eines Studienprojekts an der
+        HTW Berlin entwickelt. Der Schutz deiner Daten hat oberste Priorität. Diese
+        Erklärung beschreibt, welche Daten die App verarbeitet, zu welchem Zweck und
+        wie sie gespeichert werden.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>1. Verantwortlicher</h2>
+      <p>
+        Verantwortlich für die Datenverarbeitung im Sinne der DSGVO ist der Entwickler
+        der App im Rahmen des Hochschulprojekts. Bei Fragen zum Datenschutz wende dich
+        bitte an die unten genannte Kontaktadresse.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>2. Welche Daten werden verarbeitet?</h2>
+      <p>Die App erhebt ausschließlich die folgenden Daten, die zur Bereitstellung ihrer Kernfunktionen notwendig sind:</p>
+      <table>
+        <thead>
+          <tr><th>Datenart</th><th>Zweck</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Bildschirmnutzungszeit (App-Nutzungsstatistiken des Geräts)</td>
+            <td>Automatisches Tracking der Bildschirmzeit zur Auswertung deines digitalen Wohlbefindens</td>
+          </tr>
+          <tr>
+            <td>Standortdaten (GPS)</td>
+            <td>Erstellung einer persönlichen Heatmap deiner besuchten Orte</td>
+          </tr>
+          <tr>
+            <td>Berechnete Wohlbefinden-Scores</td>
+            <td>Darstellung von Trends und Auswertungen innerhalb der App</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <h2>3. Wo werden die Daten gespeichert?</h2>
+      <p>
+        Alle erhobenen Daten werden <strong>ausschließlich lokal auf deinem Gerät</strong>
+        in einer verschlüsselbaren Datenbank (Room/SQLite) gespeichert. Es findet
+        <strong>keine Übertragung an externe Server, Dritte oder Cloud-Dienste</strong> statt.
+        Die Standortdaten verlassen dein Gerät nicht.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>4. Benötigte Berechtigungen</h2>
+      <ul>
+        <li><strong>Nutzungsdatenzugriff (Usage Access):</strong> zum Auslesen der Bildschirmzeiten.</li>
+        <li><strong>Standortzugriff:</strong> zur Erfassung der Positionen für die Heatmap.</li>
+      </ul>
+      <p>Du kannst jede Berechtigung jederzeit in den Systemeinstellungen deines Geräts widerrufen.</p>
+    </div>
+
+    <div class="card">
+      <h2>5. Kartendarstellung (OpenStreetMap)</h2>
+      <p>
+        Für die Anzeige der Heatmap werden Kartenkacheln über
+        <strong>OpenStreetMap (OSMDroid)</strong> geladen. Dabei kann deine IP-Adresse
+        technisch bedingt an die OpenStreetMap-Server übermittelt werden. Es werden dabei
+        <strong>keine</strong> deiner gespeicherten Standort- oder Nutzungsdaten weitergegeben.
+        Es gilt die <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy">Datenschutzerklärung der OpenStreetMap Foundation</a>.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>6. Weitergabe an Dritte</h2>
+      <p>
+        Eine Weitergabe deiner Daten an Dritte erfolgt nicht. Es werden keine
+        Analyse-, Tracking- oder Werbedienste eingesetzt.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>7. Löschung deiner Daten</h2>
+      <p>
+        Du behältst jederzeit die volle Kontrolle: Du kannst deine Daten innerhalb der App
+        löschen oder durch Deinstallation der App vollständig und unwiderruflich entfernen.
+        Da keine Daten extern gespeichert werden, sind sie damit endgültig gelöscht.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>8. Deine Rechte (DSGVO)</h2>
+      <p>
+        Da alle Daten lokal liegen, hast du jederzeit unmittelbaren Zugriff und kannst die
+        Rechte auf Auskunft, Berichtigung und Löschung selbst ausüben. Es findet keine
+        zentrale Verarbeitung statt, die einer Auskunftsanfrage bedürfte.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>9. Kontakt</h2>
+      <p>
+        Bei Fragen zum Datenschutz: <a href="mailto:schmurgler7@gmail.com">schmurgler7@gmail.com</a>
+      </p>
+    </div>
+
+    <footer>
+      © 2026 WellbeingApp · HTW Berlin · Studienprojekt Mobile Betriebssysteme
+    </footer>
+  </div>
+</body>
+</html>
